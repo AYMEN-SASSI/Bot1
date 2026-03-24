@@ -1,5 +1,28 @@
 # BotGeek — AI Security Orchestration Platform
-## Graduation Project — Engineering 2025
+# Bot1 - Modular Cyber-Security Automation Tool
+
+Bot1 (BotGeek) is a multi-agent framework designed for automated reconnaissance, network scanning, and vulnerability assessment. Built with Python, it organizes security tasks into specialized agents to streamline the penetration testing workflow.
+
+## 🚀 Core Agents
+
+The project is structured around dedicated agents, each focusing on a specific phase of a security audit:
+
+* **Recon Agent (`recon_agent.py`):** Handles information gathering and OSINT to map the target's footprint.
+* **Scan Agent (`scan_agent.py`):** Performs active network scanning and service discovery (e.g., port scanning and banner grabbing).
+* **Vuln Agent (`vuln_agent.py`):** Analyzes identified services to detect known vulnerabilities and security misconfigurations.
+* **WiFi Agent (`wifi_agent.py`):** Specialized module for wireless network auditing, focusing on WEP/WPA/WPA2 security.
+* **Web Agent (`web_agent.py`):** Targets web applications to identify common flaws like SQLi, XSS, or directory traversal.
+* **Report Agent (`report_agent.py`):** Aggregates data from all agents to generate structured, actionable security reports.
+
+## 🛠 Project Structure
+
+* `core/`: The engine that manages execution and command interpretation.
+* `models/`: Contains scoring logic (e.g., `vuln_scorer.py`) to prioritize findings.
+* `agents/`: The modular logic for each specialized security task.
+* `static/`: Includes a web dashboard for visual monitoring of automated tasks.
+
+## ⚠️ Disclaimer
+This tool is for **educational purposes and authorized security auditing only**. Unauthorized access to computer systems is illegal.
 
 ---
 
